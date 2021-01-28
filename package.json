@@ -1,0 +1,34 @@
+{
+  "name": "@folio/sentry-logger",
+  "version": "1.0.0",
+  "description": "Sentry Logger Stripes",
+  "repository": "zburke/ui-sentry-logger",
+  "publishConfig": {
+    "registry": "https://repository.folio.org/repository/npm-folio/"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "main": "src/index.js",
+  "stripes": {
+    "actsAs": [
+      "handler"
+    ],
+    "handlerName": "eventHandler",
+    "route": "/"
+  },
+  "devDependencies": {
+    "@folio/stripes": "^6.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@sentry/react": "^6.0.2"
+  },
+  "peerDependencies": {
+    "@folio/stripes": "^6.0.0",
+    "react": "*",
+    "react-dom": "*"
+  }
+}
